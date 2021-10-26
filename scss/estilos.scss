@@ -1,0 +1,134 @@
+@import "estilo_importado/estilos";
+@mixin epaciado {
+    margin: 70px 0;
+}
+$width: 80%;
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto; }
+  
+.contenedor__picadas {
+    @include epaciado() 
+  }
+  /* PICADAS */
+  .picada {
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px; }
+  
+  .picada__img {
+    width: $width/2;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: inline-block; }
+  
+  .boton {
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    padding: 0 30px;
+    background-color: #7ba771;
+    color: white;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #7ba771; }
+  
+  .boton:hover {
+    text-decoration: none;
+    background: #437837;
+    color: white;
+     }
+  
+  .boton--absolute {
+    position: absolute;
+    right: 20px;
+    bottom: -25px; }
+  
+  .boton__texto {
+    font-weight: 600; }
+  
+  .finalizar { 
+    text-align: center;
+    margin: 70px 0; }
+  
+  .boton--violeta {
+    background: mediumpurple; }
+  
+  .boton--violeta:hover {
+    background: #5a4585; }
+/* SANDWICHES */
+.contenedor__sandwiches {
+  @include epaciado() 
+}
+.sandwiches {
+  border-radius: 15px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px; }
+
+.sandwiches__img {
+  width: $width/2;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: inline-block; }
+/* Sucursales */
+.sucursal {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+i {
+  color: white;
+}
+.sucursal__mapa{
+  width: 100%;
+}
+@media only screen and (max-width:400px) {
+  .sucursal{
+    max-width: 300px;
+    border: 2px;
+  }
+  .sucursal__mapa{
+    display: none;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sucursal{
+    max-width: 960px;
+    border: 2px solid red;
+  }
+  .sucursal__mapa{
+    display: none;
+  }
+}
+/* Envios */
+.envios{
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.envios__precios--verde {
+  color: rgb(20, 107, 20)
+}
+.app {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}

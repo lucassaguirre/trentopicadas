@@ -1,0 +1,245 @@
+body{
+    background: black;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+#btn-menu {
+    display: none;
+}
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: rgb(0, 0, 0);
+}
+header label {
+    display: none;
+}
+div label img {
+    display: none;
+}
+/* En común */
+nav {
+    position: fixed;
+}
+h1{
+    color: #949494;;
+}
+.telefono{
+    color: #949494;;
+}
+p{
+    color: ivory;
+}
+.titulo{
+    text-align: center;
+}
+header{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: table;
+}
+.menu ul {
+    color: #949494;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+.menu li img{
+    display: flex;
+    justify-content: left;
+    
+}
+.menu li a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+a {
+    text-decoration:none;
+}
+.menu li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+main {
+    padding: 20px;
+}
+.fondo_principal{
+    width: 100%;
+}
+.copyright{
+    text-align: center;
+    padding: 20px 0;
+}
+.copyright p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+/* Index */
+h3 { 
+    color: #949494;
+    text-align: center;
+}
+.imagen_mobil {
+    display: none;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+/* Tienda */
+th, td {
+    padding: 15px;
+}
+td img {
+    border-radius: 10px;
+}
+td img :hover{
+    border-radius: 10px;
+    transform: scale(5,1);
+}
+table, th, td {
+    border:1px solid black;
+    color: #949494;
+    background-color: black;
+}
+/* Tienda Real Grid*/
+.tienda-real-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: 5%;
+    grid-gap: 30px;
+}
+.tienda-real-grid img{
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    transform: scale(1);
+    cursor: pointer;
+}
+.tienda-real-grid img:hover{
+    transform: scale(1.5);
+} 
+/* Contacto */
+form {
+    padding: 20px;
+    margin: 0px;
+    border: 50px solid black;
+    background-color: black;
+    text-align: center;
+    color: #949494;
+}
+/* Quienes Somos */
+.quienes_somos {
+    padding: 20px;
+    margin: 0px;
+    border: 50px solid rgb(0, 0, 0);
+    text-align: center;
+}
+/* Posibles Errores */
+
+/* Media */
+/* Celular */
+@media only screen and (max-width:400px) {
+    header label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 10px;   
+    }
+    .menu{
+        position: absolute;
+        background-color: black ;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.3s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    header label:hover {
+        display: block;
+        cursor: pointer;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        width: 100%;
+    }
+    .tienda-real-grid{
+        display: inline;;
+    }
+    .titulo{
+        display: none;
+    }
+}
+/* Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    header label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 10px;   
+    }
+    .menu{
+        position: absolute;
+        background-color: black;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.3s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    header label:hover {
+        display: block;
+        cursor: pointer;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    textarea{
+        width: 100%;
+    }
+    .sucursal__mapa{
+        width: 100%;
+        max-width: 300px;
+    }
+  }
