@@ -1,0 +1,58 @@
+#btn-menu {
+    display: none;
+}
+header label {
+    display: none;
+}
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: rgb(0, 0, 0);
+}
+header{
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: table;
+    z-index: 1;
+}
+.menu ul {
+    color: #949494;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li img{
+    display: flex;
+    justify-content: left;
+    
+}
+.menu li a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+a {
+    text-decoration:none;
+}
+.menu li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
