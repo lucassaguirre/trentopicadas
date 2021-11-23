@@ -51,9 +51,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0px;
-  display: table;
-  z-index: 1;
-}
+  display: table; }
 
 .menu ul {
   color: #949494;
@@ -395,27 +393,20 @@ i {
 
 .sucursal__mapa {
   width: 100%; }
-.sucursal__mapa__link {
-  display: none;
-}
 
 @media only screen and (max-width: 400px) {
   .sucursal {
     max-width: 300px;
     border: 2px; }
   .sucursal__mapa {
-    display: none; }
-  .sucursal__mapa__link {
-      display: inline;} }
+    display: none; } }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .sucursal {
     max-width: 960px;
     border: 2px solid red; }
   .sucursal__mapa {
-    display: none; }
-  .sucursal__mapa__link {
-      display: inline;} }
+    display: none; } }
 
 /* Envios */
 .envios {
