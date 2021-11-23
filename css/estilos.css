@@ -233,6 +233,19 @@ table, th, td {
   .sucursal__mapa {
     display: none; }
   .sucursal__mapa__link {
+    display: inline-block; }
+  .picada {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px; }
+  .picada__img {
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 10px;
     display: inline-block; } }
 
 .sucursal {
