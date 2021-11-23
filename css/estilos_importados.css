@@ -6,6 +6,12 @@ body{
 #btn-menu {
     display: none;
 }
+.nro_telefono{
+    display: none;
+}
+.telefono{
+    display: none;
+}
 .btn-wsp {
     position: fixed;
     width: 55px;
@@ -54,6 +60,7 @@ header{
     position: fixed;
     top: 0px;
     display: table;
+    z-index: 1;
 }
 .menu ul {
     color: #949494;
@@ -138,13 +145,11 @@ table, th, td {
 }
 .tienda-real-grid img{
     width: 100%;
-    transition: 0.3s ease-in-out;
+    transition: all 300ms;
     position: relative;
-    transform: scale(1);
-    cursor: pointer;
 }
 .tienda-real-grid img:hover{
-    transform: scale(1.5);
+    transform: scale(1.15);
 } 
 /* Contacto */
 form {

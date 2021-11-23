@@ -1,0 +1,78 @@
+@media only screen and (max-width:400px) {
+    header label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 10px;   
+    }
+    .menu{
+        position: absolute;
+        background-color: black ;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.3s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    header label:hover {
+        display: block;
+        cursor: pointer;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        width: 100%;
+    }
+    .tienda-real-grid{
+        display: inline;;
+    }
+    .titulo{
+        display: none;
+    }
+    .sucursal{
+        max-width: 300px;
+        border: 2px;
+      }
+      .sucursal__mapa{
+        display: none;
+      }
+      .app{
+        display: none;
+      }
+      .nro_telefono{
+        max-width: 1000px;
+        width: 90%;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+      }
+      .telefono{
+        display: none;
+      }
+      .sucursal__mapa__link{
+        display: inline-block;
+      }
+      .picada {
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+        align-items: center;
+        position: relative;
+        margin-bottom: 100px; }
+      
+        .picada__img {
+          width: $width/2;
+          margin-right: 20px;
+          border-radius: 10px;
+          display: inline-block; }
+}

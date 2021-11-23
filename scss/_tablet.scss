@@ -1,0 +1,41 @@
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    header label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 10px;   
+    }
+    .menu{
+        position: absolute;
+        background-color: black;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.3s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    header label:hover {
+        display: block;
+        cursor: pointer;
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    textarea{
+        width: 100%;
+    }
+    .sucursal{
+        max-width: 960px;
+        border: 2px solid red;
+      }
+      .sucursal__mapa{
+        display: none;
+      }
+      .sucursal__mapa__link{
+        display: inline-block;
+      }
+  }

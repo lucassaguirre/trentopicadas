@@ -1,0 +1,52 @@
+body{
+    background: black;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+h1{
+    color: #949494;;
+}
+.telefono{
+    color: #949494;
+    justify-content: center;
+}
+p{
+    color: ivory;
+}
+.titulo{
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+main {
+    padding: 20px;
+}
+.fondo_principal{
+    width: 100%;
+}
+.copyright{
+    text-align: center;
+    padding: 20px 0;
+}
+.copyright p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+@mixin epaciado {
+    margin: 70px 0;
+}
+$width: 80%;
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto; }
+  
+.contenedor__picadas {
+    @include epaciado() 
+  }
+.nro_telefono {
+    display: none;
+}
